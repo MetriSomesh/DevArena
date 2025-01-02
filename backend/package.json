@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "tsc --b && node ./dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -18,10 +19,15 @@
     "@types/node": "^22.10.2",
     "@types/passport": "^1.0.17",
     "@types/passport-google-oauth20": "^2.0.16",
+    "@types/uuid": "^10.0.0",
+    "@types/ws": "^8.5.13",
     "prisma": "^6.1.0",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "uuid": "^11.0.3",
+    "ws": "^8.18.0"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.21.0",
     "@prisma/client": "^6.1.0",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",

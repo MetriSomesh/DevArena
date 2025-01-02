@@ -27,7 +27,8 @@ model UserGameInfo{
   userid    Int    @unique
   user User        @relation(fields: [userid],references: [id])
   username  String @unique
-  avatar    String
-  stack     String[]
-
+  avatar    String @default("")
+  stack     String[] @default([""])
+  score     Int @default(0)   
+  rank      String @default("plastic")
 }
